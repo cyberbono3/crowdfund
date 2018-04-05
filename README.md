@@ -1,6 +1,6 @@
 # crowdfund
 
-Ethereum storage is able to store data in chain data and state trie. Writing to the chain data is more chepaer then in state trie.
+Ethereum storage is able to store data in chain data and state trie. Essentially, writing to the chain data is more cheaper then in state trie.
 Data reading is possible only from state trie.
 This simple Crowdfund contract is able to notify when the new contribution is made.
 To enable this functionality i declare new event 'New Contribution' in contract and in the function contribute() which is called upon new contribution reaches the contract.
