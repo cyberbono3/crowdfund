@@ -3,7 +3,13 @@
 Ethereum storage is able to store data in chain data and state trie. Essentially, writing to the chain data is more cheaper then in state trie.
 Data reading is possible only from state trie.
 This simple Crowdfund contract is able to notify when the new contribution is made.
-To enable this functionality i declare new event 'New Contribution' in contract and in the function contribute() which is called upon new contribution reaches the contract.
+To enable this functionality i declare new event 'New Contribution' in contract and in the function contribute() which is called upon new contribution reaches the contract. 
+
+'log' in transaction receipt and 'logsBloom' property of block holds the information about triggered events.
+
+To watch event we have to instantiate event watcher
+var event = deployed.NewContribution();
+event.watch((error, result) => { console.log(results.args._value) }
 
 
 ## Out of gas problem
